@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Calculadora Hidratación</title>
+        <title>Calculadora Basal</title>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="X-UA-Compatible"
+        conte="IE=edge"/>
+        <meta charset= "utf-8">
+        <meta name="viewport"
+        contet=" width=device-width,initial-scale=1"/>
     </head>
     <body>
-        <button>Método Holliday-Segar</button>
-        <br>
-        <button>Método de superficie corporal</button>
-        <br>
-        <input type="number" placheolder="Peso en Kilogramos"/>
-        <button>calcular</button>
-        <p>volumen diario: 900cc/hs</p>
-        <p>Mantenimeinto: 37.5cc/hs</p>
-        <p>Medio Mantenimeinto: 56.2cc/hs</p>
-       
-        <ol>
-            <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
-            <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
-            <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
-        </ol>
-            
+        
+        <div class= "contenedor">
+            <div id= boton class="brillo">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1>Calculadora Basal</h1>
+                <br>
+                    <p>"Peso en Kilogramos"</p>
+                <div id="button">
+                <input type="number" />
+                <button>Calcular</button>
+                </div>
+            </div>
+            <div id= contenido class="brillo"> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>¿Cómo se Calcula?</h2>
+                <p>De 0kg a 10kg, se calcula 100cc por cada kilo.</p>
+                <p>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</p>
+                <p>De 20kg para arriba, se suman 20cc por cada kilo adicional</p>    
+            </div>
+        </div>
+    <script src="./script.js" defer></script>
     </body>
 </html>
