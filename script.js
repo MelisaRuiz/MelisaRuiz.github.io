@@ -1,7 +1,7 @@
+const mal = document.getElementById('mal');
 const FIRST = document.getElementById('calpri');
 const SECOND = document.getElementById('calsec');
 const THIRD = document.getElementById('calter');
-const mal = document.getElementById('mal');
 const PUSH = document.getElementById('ingresar');
 
 PUSH.addEventListener('click', () => {
