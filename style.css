@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
     text-align: center;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,64,121,1) 48%, rgba(0,232,255,1) 100%);
     }
@@ -23,6 +23,7 @@ body {
     }
 .brillo{
     color: rgb(0, 0, 0);
+    font-size: 14px;
     width: 50%;
     height: 82%;
     float: left;
@@ -52,7 +53,8 @@ button{
 	transition: transform 20ms ease-in;
     margin: 10px;
     background-color: transparent;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+
     }
 button:hover{
     cursor: pointer;
@@ -62,7 +64,7 @@ button:active {
     }
 
 .mal{
-    color:rgb(255, 37, 37);
+    color:rgb(255, 174, 174);
     font-size: 14px;
     display:none
     }
@@ -74,7 +76,7 @@ button:active {
 #ingresar{
     color: #000000;
     font-size: 12px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
     }
 
 .hide{
@@ -82,10 +84,10 @@ button:active {
     }
 .show{
     display: block;
-}
+    }
 .esconde{
     display: none;
     }
 .other{
     display: block;
-}
+    }
