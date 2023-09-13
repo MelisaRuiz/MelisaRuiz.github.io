@@ -3,39 +3,41 @@
     <head>
         <title>Calculadora Basal</title>
         <link rel="stylesheet" href="style.css">
-        <meta http-equiv="X-UA-Compatible"
-        conte="IE=edge"/>
-        <meta charset= "utf-8">
-        <meta name="viewport"
-        contet=" width=device-width,initial-scale=1"/>
+        <link rel="icon" href="estetoscopio.png">
     </head>
     <body>
-        
-        <div class= "contenedor">
-            <div id= boton class="brillo">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+        <div class="contenedor" >
+            <div class="titulo">              
                 <h1>Calculadora Basal</h1>
-                <br>
-                    <p>"Peso en Kilogramos"</p>
-                <div id="button">
-                <input type="number" />
-                <button>Calcular</button>
+            </div>
+            <div id="calculadora" class="brillo">
+                <p id="mal" >Introduzca datos correctos</p>
+                <input id="valor" type="number" placeholder="Peso en kilogramos" />
+                <button  id="ingresar" >Calcular</button>
+                <div>
+                    <p >Volumen diario </p>
+                    <p class="diseño" id="calpri"> cc </p>
+                    <p > Mantenimiento </p>
+                    <p class="diseño" id="calter"> cc/hr </p>
+                    <p> Medio Mantenimiento</p>
+                    <p class="diseño" id="calsec"> cc/hr (m+m/2)</p>
                 </div>
             </div>
-            <div id= contenido class="brillo"> 
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h2>¿Cómo se Calcula?</h2>
-                <p>De 0kg a 10kg, se calcula 100cc por cada kilo.</p>
-                <p>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</p>
-                <p>De 20kg para arriba, se suman 20cc por cada kilo adicional</p>    
+
+            <div id="metodos" class="brillo">
+                <button id="textbtn">Método Holliday-Segar</button>
+                <span class= "hide" id="texto">
+                    <p>Cuando el niño tiene hasta 10kg: 100cc por cada kilo.
+                    Luego, por cada kilo arriba de 10 y hasta 20kg, se suman 50cc.
+                    Finalmente, por cada kilo arriba de 20kg se suman 20cc.</p>
+                </span>
+                <button id="textbtne">Método de superficie corporal</button>
+                <span class= "esconde" id="texte">
+                    <p>Cuando el niño pesa mas de 30kg, se utiliza un cálculo diferente:
+                    Superficie corporal = ( (peso * 4) + 7) / (peso + 90)
+                    Este resultado se multiplica por 1500 o por 2000 para hallar el valor del volumen diario en cc,
+                    y el medico decide cual de los dos resultados utilizar.</p>
+                </span>
             </div>
         </div>
     <script src="./script.js" defer></script>
