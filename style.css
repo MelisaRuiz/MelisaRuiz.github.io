@@ -25,33 +25,15 @@ body {
     width: 60vw;
     height: 7vh;
     }
-
-.diseño{
+#calculadora{
+    background-color:  #cde3f8;
     color: rgb(0, 0, 0);
     font-size: 14px;
     width: 20vw;
     height: 58vh;
     float: left;
-    text-align: center;
     }
-#calpri{
-    position: relative;
-    margin: 20px;
-    width: 17vw;
-    height: 10vh;
-    }
-#calsec{
-    position: relative;
-    margin: 20px;
-    width: 17vw;
-    height: 10vh;
-    }
-#calter{
-    position: relative;
-    margin: 20px;
-    width: 17vw;
-    height: 10vh;
-    }
+
 .tercer{
     background-color:  #ffffff;
     color: rgb(0, 0, 0);
@@ -62,9 +44,15 @@ body {
     text-align: center;
     }
 
-#calculadora{
-    background-color:  #cde3f8;
+
+.brillar{
+    background-color:  #ffffff;
     color: rgb(0, 0, 0);
+    font-size: 14px;
+    width: 20vw;
+    height: 58vh;
+    float: left;
+    text-align: center;
     }
 #metodos{
     color: rgb(0, 0, 0);

@@ -44,6 +44,8 @@ function calc(CALCU){
         }
     return Math.round(resp);
     }
+
+    
 let textbtn = document.getElementById('textbtn');
 let texto = document.getElementById('texto');
 textbtn.addEventListener('click', letex)
