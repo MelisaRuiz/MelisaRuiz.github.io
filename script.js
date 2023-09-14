@@ -34,7 +34,7 @@ PUSH.addEventListener('click', () => {
         }
     if (CALCU> 29){
         let ocult= lala(CALCU);
-        let oculto= rita(CALCU)
+        let oculto= rita(CALCU);
         SECRETO.innerHTML = ("Por 1500 = ") + ocult + (' cc');
         SECRETITO.innerHTML = ("Por 2000 = ") + oculto + (' cc');
         SECOND.style.display ='none';
@@ -59,6 +59,8 @@ function calc(CALCU){
         }
     return Math.round(resa);
     }
+
+
 function lala(CALCU){
     valor=CALCU
     resp=0
@@ -74,22 +76,32 @@ function rita(CALCU){
     exe= (valor * 4 + 7)/(valor + 90);
     respi= exe * 2000;
     return Math.round(respi);
-
     }
 
 let textbtn = document.getElementById('textbtn');
 let texto = document.getElementById('texto');
-textbtn.addEventListener('click', letex)
+textbtn.addEventListener('click', letex);
 function letex() {
     texto.classList.toggle('show');
-    if (CALCU>0 && CALCU < 30){
-        
-
     }
+    if (CALCU>0 && CALCU<30){
+        textbtn.style.color = 'blue';
+        }
+    else {
+        textbtn.style.color = 'black';
+        }
+
+        
 let textbtne = document.getElementById('textbtne');
 let texte = document.getElementById('texte');
-textbtne.addEventListener('click', letexi)
+textbtne.addEventListener('click', letexi);
 function letexi() {
     texte.classList.toggle('other');
     }
+    if (CALCU>0 && CALCU>29){
+        textbtne.style.color = 'blue';
+        }
+    else {
+        textbtne.style.color = 'black';
+        }
 });
