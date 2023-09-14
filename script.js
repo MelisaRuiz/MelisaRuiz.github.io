@@ -1,6 +1,7 @@
 const mal = document.getElementById('mal');
 const FIRST = document.getElementById('calpri');
 const SECRETO = document.getElementById('ocult');
+const SECRETITO = document.getElementById('oculto');
 const SECOND = document.getElementById('calsec');
 const THIRD = document.getElementById('calter');
 const PUSH = document.getElementById('ingresar');
@@ -12,26 +13,28 @@ PUSH.addEventListener('click', () => {
         THIRD.style.display = 'inline';
         FIRST.style.display = 'inline';
         SECRETO.style.display = 'inline';
+        SECRETITO.style.display = 'inline';
         }
     else {
         mal.style.display = 'visible';
         SECOND.style.display ='none';
         THIRD.style.display = 'none';
         FIRST.style.display = 'none';
+        SECRETITO.style.display = 'none';
         SECRETO.style.display = 'none';
         }
     
     if (CALCU>0 && CALCU < 30){
         let calpri = calc(CALCU);
-        let volumen = CALCU;
-        let medio = volumen;
         FIRST.innerHTML = calpri + ' cc';
-        THIRD.innerHTML = (volumen /24) + ' cc/hr';
-        SECOND.innerHTML = (medio * 1.5) +' cc/hr';
+        THIRD.innerHTML = calpri/24 + ' cc/hr';
+        SECOND.innerHTML = (calpri/24) * 1.5 +' cc/hr';
         }
     if (CALCU> 29){
-        let ocult = lala(CALCU);
-        SECRETO.innerHTML = ("Por 1500 ") + resp + (" cc y Por 2000 ") + respi + ' cc';
+        let ocult= lala(CALCU);
+        let oculto= rita(CALCU)
+        SECRETO.innerHTML = ("Por 1500 = ") + ocult + (' cc');
+        SECRETITO.innerHTML = ("Por 2000 = ") + oculto + (' cc');
         SECOND.style.display ='none';
         THIRD.style.display = 'none';
         FIRST.style.display = 'none';
@@ -58,12 +61,16 @@ function lala(CALCU){
     valor=CALCU
     resp=0
     exe=0
-    respi= 0;
     if (""){
         exe= (valor * 4 + 7)/(valor + 90);
         resp= exe * 1500;
         return Math.round(resp);
         }
+    }
+function rita(CALCU){
+    valor=CALCU
+    exe=0
+    respi= 0;
     if (""){
         exe= (valor * 4 + 7)/(valor + 90);
         respi= exe * 2000;

@@ -2,10 +2,11 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
     text-align: center;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,64,121,1) 48%, rgba(0,232,255,1) 100%);
+    background: whitesmoke;
     }
 .contenedor{
     padding: 5px;
+    background-color: #f7f5f1;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
     0 10px 10px rgba(0,0,0,0.22);
     color: rgb(0, 0, 0);
@@ -15,18 +16,18 @@ body {
     position: absolute;
     inset: 0;
     margin: auto;
-    border: 1px solid #67c4f3;
+    border: 1px solid #a6aaaa;
     }
                                 
 .titulo{
     text-align: center;
-    background-color: #d5ebff;
+    background-color: #eeebe7;
     color: #000000;
     width: 60vw;
     height: 7vh;
     }
 #calculadora{
-    background-color:  #cde3f8;
+    background-color:  #d9d6d2;
     color: rgb(0, 0, 0);
     font-size: 14px;
     width: 20vw;
@@ -35,8 +36,8 @@ body {
     }
 
 .tercer{
-    background-color:  #ffffff;
-    color: rgb(0, 0, 0);
+    background-color:  #f6f3f0;
+    color: rgb(114, 112, 112);
     font-size: 14px;
     width: 20vw;
     height: 58vh;
@@ -46,7 +47,6 @@ body {
 
 
 .brillar{
-    background-color:  #ffffff;
     color: rgb(0, 0, 0);
     font-size: 14px;
     width: 20vw;
@@ -62,7 +62,7 @@ body {
     float: right;
     text-align: center;
     color: rgb(0, 0, 0);
-    background-color:  rgb(185, 223, 255);
+    background-color:  #d7d4cf;
     }
 
 
@@ -71,14 +71,15 @@ input {
     padding: 12px 15px;
     color: rgb(0, 0, 0);
 	border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(236, 247, 255);
+    background-color: #e9e7e3;
     }
 
 
 .mal{
     color:rgb(255, 0, 0);
     font-size: 14px;
-    display:none
+    display:none;
+    background-color: #d5d3cf;
     }
 #ingresar{
     color: #000000;
