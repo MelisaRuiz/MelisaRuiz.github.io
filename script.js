@@ -13,14 +13,12 @@ PUSH.addEventListener('click', () => {
         THIRD.style.display = 'inline';
         FIRST.style.display = 'inline';
         SECRETO.style.display = 'inline';
-        SECRETITO.style.display = 'inline';
         }
     else {
         mal.style.display = 'visible';
         SECOND.style.display ='none';
         THIRD.style.display = 'none';
         FIRST.style.display = 'none';
-        SECRETITO.style.display = 'none';
         SECRETO.style.display = 'none';
         }
     
