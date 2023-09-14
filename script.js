@@ -1,51 +1,78 @@
 const mal = document.getElementById('mal');
 const FIRST = document.getElementById('calpri');
+const SECRETO = document.getElementById('ocult');
 const SECOND = document.getElementById('calsec');
 const THIRD = document.getElementById('calter');
 const PUSH = document.getElementById('ingresar');
 
 PUSH.addEventListener('click', () => {
     const CALCU = document.getElementById('valor').value;
-    if (CALCU >0){
+    if (CALCU>0){
+        SECOND.style.display = 'inline';
+        THIRD.style.display = 'inline';
+        FIRST.style.display = 'inline';
+        SECRETO.style.display = 'inline';
+        }
+    else {
+        mal.style.display = 'visible';
+        SECOND.style.display ='none';
+        THIRD.style.display = 'none';
+        FIRST.style.display = 'none';
+        SECRETO.style.display = 'none';
+        }
+    
+    if (CALCU>0 && CALCU < 30){
         let calpri = calc(CALCU);
         let volumen = CALCU;
         let medio = volumen;
         FIRST.innerHTML = calpri + ' cc';
-        THIRD.innerHTML = volumen /24 + ' cc/hr';
-        SECOND.innerHTML = medio * 1.5 +' cc/hr: ' +' (m+m/2)';
-        SECOND.style.display = 'block';
-        THIRD.style.display = 'block';
-        FIRST.style.display = 'block';
-        } 
-    else {
-        mal.style.display = 'block';
-        SECOND.style.display = 'none';
+        THIRD.innerHTML = (volumen /24) + ' cc/hr';
+        SECOND.innerHTML = (medio * 1.5) +' cc/hr';
+        }
+    if (CALCU> 29){
+        let ocult = lala(CALCU);
+        SECRETO.innerHTML = ("Por 1500 ") + resp + (" cc y Por 2000 ") + respi + ' cc';
+        SECOND.style.display ='none';
         THIRD.style.display = 'none';
         FIRST.style.display = 'none';
-        }
+        } 
+    
 function calc(CALCU){
-    resp=1
-    exe=1
+    resa=0
+    exe=0
     valor=CALCU
-    if (valor > 29 ) {
-        respi = (valor * 4 + 7)/(valor + 90);
-        resp = 'Por 1500 y ' + (respi *1500 )+ 'Por 2000' + (respi * 2000);
-        }
     if (CALCU >= 1 && CALCU < 11){
-        resp = valor * 100 
+        resa = valor * 100 
         }
     if (CALCU > 10 && valor < 21){
         exe = ( valor - 10); 
-        resp= (1000) + (exe * 50);
+        resa= (1000) + (exe * 50);
         }
     if (CALCU > 20 && valor < 30){ 
         exe = (valor - 20); 
-        resp= (1500) + (450) + (exe * 20);
+        resa= (1500) + (450) + (exe * 20);
         }
-    return Math.round(resp);
+    return Math.round(resa);
+    }
+function lala(CALCU){
+    valor=CALCU
+    resp=0
+    exe=0
+    respi= 0;
+    if (""){
+        exe= (valor * 4 + 7)/(valor + 90);
+        resp= exe * 1500;
+        return Math.round(resp);
+        }
+    if (""){
+        exe= (valor * 4 + 7)/(valor + 90);
+        respi= exe * 2000;
+        return Math.round(respi);
+        }
     }
 
-    
+
+
 let textbtn = document.getElementById('textbtn');
 let texto = document.getElementById('texto');
 textbtn.addEventListener('click', letex)
