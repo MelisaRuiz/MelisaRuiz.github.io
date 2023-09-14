@@ -12,6 +12,7 @@ PUSH.addEventListener('click', () => {
         SECOND.style.display = 'inline';
         THIRD.style.display = 'inline';
         FIRST.style.display = 'inline';
+        SECRETITO.style.display = 'inline';
         SECRETO.style.display = 'inline';
         }
     else {
@@ -19,6 +20,7 @@ PUSH.addEventListener('click', () => {
         SECOND.style.display ='none';
         THIRD.style.display = 'none';
         FIRST.style.display = 'none';
+        SECRETITO.style.display = 'none';
         SECRETO.style.display = 'none';
         }
     
@@ -27,6 +29,8 @@ PUSH.addEventListener('click', () => {
         FIRST.innerHTML = calpri + ' cc';
         THIRD.innerHTML = calpri/24 + ' cc/hr';
         SECOND.innerHTML = (calpri/24) * 1.5 +' cc/hr';
+        SECRETITO.style.display = 'none';
+        SECRETO.style.display = 'none';
         }
     if (CALCU> 29){
         let ocult= lala(CALCU);
@@ -59,30 +63,27 @@ function lala(CALCU){
     valor=CALCU
     resp=0
     exe=0
-    if (""){
-        exe= (valor * 4 + 7)/(valor + 90);
-        resp= exe * 1500;
-        return Math.round(resp);
-        }
+    exe= (valor * 4 + 7)/(valor + 90);
+    resp= exe * 1500;
+    return Math.round(resp);
     }
 function rita(CALCU){
     valor=CALCU
     exe=0
     respi= 0;
-    if (""){
-        exe= (valor * 4 + 7)/(valor + 90);
-        respi= exe * 2000;
-        return Math.round(respi);
-        }
+    exe= (valor * 4 + 7)/(valor + 90);
+    respi= exe * 2000;
+    return Math.round(respi);
+
     }
-
-
 
 let textbtn = document.getElementById('textbtn');
 let texto = document.getElementById('texto');
 textbtn.addEventListener('click', letex)
 function letex() {
     texto.classList.toggle('show');
+    if (CALCU>0 && CALCU < 30){
+        
 
     }
 let textbtne = document.getElementById('textbtne');
