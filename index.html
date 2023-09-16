@@ -1,49 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Calculadora Basal</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="estetoscopio.png">
-    </head>
-    <body>
-        <div class="contenedor" >
-            <div class="titulo"> 
-                             
-                <h1>Calculadora Basal</h1>
-                
-                <div class="tercer">
-                    <p id="mal" >Introduzca datos correctos</p>
-                    <input id="valor" type="number" placeholder="Peso en kilogramos" />
-                    <button  id="ingresar" >Calcular</button>
-                </div>
-
-                <div id="calculadora">
-                    <p class="diseño" >Volumen diario </p>
-                    <p class="diseño" id="calpri">cc </p>
-                    <p id="ocult"> </p>
-                    <p id="oculto"> </p>
-                    <p class="diseño" >Mantenimiento </p>
-                    <p class="diseño" id="calter">cc/hr</p>
-                    <p class="diseño" > Medio Mantenimiento</p>
-                    <p class="diseño" id="calsec"> cc/hr</p>
-                </div>
-
-                <div class="brillar" id="metodos">
-                    <button id="textbtn">Método Holliday-Segar</button>
-                        <span class= "hide" id="texto">
-                            <p>Cuando el niño tiene hasta 10kg: 100cc por cada kilo.</p>
-                            <p>Luego, por cada kilo arriba de 10 y hasta 20kg, se suman 50cc.</p>
-                            <p>Finalmente, por cada kilo arriba de 20kg se suman 20cc.</p>
-                        </span>
-                    <button id="textbtne">Método de superficie corporal</button>
-                        <span class= "esconde" id="texte">
-                            <p>Cuando el niño pesa mas de 30kg, se utiliza un cálculo diferente:</p>
-                            <p>Superficie corporal = ((peso * 4) + 7)/(peso + 90)</p>
-                            <p>Este resultado se multiplica por 1500 o por 2000 para hallar el valor del
-                            volumen diario en cc, y el medico decide cual de los dos resultados utilizar.</p>
-                        </span>
-                </div>
-        </div>
-    <script src="./script.js" defer></script>
-    </body>
+  <head>
+    <title>Wordle PPY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Wordle.png">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Wordle PPY</h1>
+    <input type="text" id="guess-input">
+    <button id="mal">Introduce una palabra de 5 letras</button>
+    <br>
+    <button id="guess-button">Intentar</button>
+    <br>
+    <div id="grid"></div>
+    <p id="mensaje"></p>
+  </body>
 </html>
